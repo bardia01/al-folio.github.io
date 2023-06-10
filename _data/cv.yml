@@ -11,12 +11,10 @@
 - title: Education
   type: time_table
   contents:
-    - title: Integrated Masters
+    - title: Integrated Masters in Electronic and Information Enginneering
       institution: Imperial College London
       year: 2020-2024
       description:
-        - Description 1.
-        - Description 2.
         - title: 1st Year.
           contents:
             - Analysis and Design of Circuits.
