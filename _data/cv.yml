@@ -2,31 +2,46 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Bardia Mohammadzadeh
     - name: Date of Birth
-      value: 14th March 1879
+      value: 24th September 2001
     - name: Languages
-      value: English, German
+      value: English
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Integrated Masters
+      institution: Imperial College London
+      year: 2020-2024
       description:
         - Description 1.
         - Description 2.
-        - title: Description 3.
+        - title: 1st Year.
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+            - Analysis and Design of Circuits.
+            - Digital and Computer Architecture
+            - Programming
+            - Mathematics
+        - title: 2nd year.
+          contents:
+            - Information Processing
+            - Instruction Architectures and Compilers
+            - Software systems
+            - Algorithms and discrete mathematics
+        - title: 3rd year.
+          contents:
+            - Digital System Design
+            - Advanced Computer Architecture
+            - Introduction to Machine Learning
+            - Embedded systems
+    - title: A Level 
+      institution: Woodhouse College
+      year: 2018
       description:
-        - Description 1.
-        - Description 2.
+        - Mathematics
+        - Further Mathematics
+        - Physics
 
 - title: Experience
   type: time_table

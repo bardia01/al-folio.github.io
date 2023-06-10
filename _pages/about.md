@@ -18,6 +18,3 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 Hello! I'm Bardia. I am a 3rd year Electronic and Information Engineering student at Imperial College London. I believe that the world of hardware engineering and computer architecture is fascinating. To that end, I am pursuing a career in the field. Currently, I am undergoing a 6 month industrial placement at Apple GPU, working with the Design Verification team. The experience has and is developing my understanding of ASIC development greatly, and I am gaining a sincere appreciation of the value that design verification brings to chip development.
-
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
