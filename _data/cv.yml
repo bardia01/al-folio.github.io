@@ -60,11 +60,12 @@
       institution: Graphcore
       year: 2022
       month: June - September
-      description: Design, verification, and build of multiple modules in SystemVerilog with the use of C++ and Python for infrastructure.
-                   - Used SystemVerilog and EDA tools to design, synthesize and verify different Floating Point arithmetic unit hardware modules.
-                   - Developed these designs using various optimization techniques in order to meet tight requirements by analyzing timing and area reports.
-                   - Optimised designs using physical synthesis tools.
-                   - Created custom testbenches to verify the designs using SystemVerilog.
+      description: | 
+      Design, verification, and build of multiple modules in SystemVerilog with the use of C++ and Python for infrastructure.
+      - Used SystemVerilog and EDA tools to design, synthesize and verify different Floating Point arithmetic unit hardware modules.
+      - Developed these designs using various optimization techniques in order to meet tight requirements by analyzing timing and area reports.
+      - Optimised designs using physical synthesis tools.
+      - Created custom testbenches to verify the designs using SystemVerilog.
 
 - title: Hardware-Related Project experience
   type: time_table
