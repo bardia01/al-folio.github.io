@@ -1,80 +1,46 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: assets/img/12.jpg
+title: Hardware-based mixed-format arithmetic accelerator
+description: 
 importance: 1
+img: /assets/img/fpga.jpg
 category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+This project was exploratory, we set out with a goal of investigating how to optimise datapath design while limited by resource constraints. To be able to measure progress, at each milestone we tested the design by computing the same mathematical expression, which was a summation involving exponentials and sinusoid factors. 
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+The development process began by using a primitive design (implementing the function in software without any DSPs enabled on the soft-processor), and measuring the performance. Using this, we could analyse the data and hypothesise where the bottlenecks of the system lied. Then, we used simulations and experimentation to collect data about the performance gain versus resource cost of any suggested changes. Using this information, we were able to iterate the system architecture and measure the resultant performance.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+Within the design phase, it was important to make sure each module implemented was verified with thorough and versatile testing so as to not lose accuracy in the output.
+
+
+In the graph below, you can see the progress made across various milestones.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/dsd_full_diagram.jpg" title="Micro-architecture" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col">
+        <div class="col-sm mt-3 mt-md-0">
+            {% include figure.html path="assets/img/dma_diag.jpg" title="System" class="img-fluid rounded z-depth-1" %}
+        </div>
+        <div class="col-sm mt-3 mt-md-0">
+            {% include figure.html path="assets/img/performance.jpg" title="Data" class="img-fluid rounded z-depth-1" %}
+        </div>
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    On the left, the micro-architecture of the arithmetic block deployed on an entry level FPGA. On the right, the full system diagram including the DMA module, and the performance against resource usage and execution time across various milestones in the development process.
 </div>
+In any digital design, the architecture is created by balancing resource usage and performance. As a result, all our performance data is complemented by the resource usage for each respective milestone in development. Resource usage recorded was a function of memory utilisation, LUT usage, register utilisation and DSP utilisation.
+
+
+The design had single-precision floating-point input and output. However, to accelerate computation of sinusoids, we implemented the <a href="https://en.wikipedia.org/wiki/CORDIC">CORDIC algorithm</a>. This meant that we had to experiment with floating-point to fixed-point conversions. To ensure that the loss of accuracy was limited to a known bound, we conducted Monte-Carlo simulations on the accuracy with various fixed-point word lengths using MATLAB. The same experiement methodology was repeated for various number of CORDIC iterations.
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/monte_carlo_wordlength.jpg" title="Monte-Carlo" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
+To increase performance, it is important to consider the entire datapath and the bottle-necks within it. For example, the data shows that improvements in the compute unit were increasing performance, however, the design was eventually bottle-necked by the speed of memory accesses. As a result, optimising the compute units further was not improving performance. Therefore, we implemented a DMA access, which enabled for much faster memory accesses.
