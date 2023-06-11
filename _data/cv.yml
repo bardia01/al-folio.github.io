@@ -48,14 +48,16 @@
       institution: Apple GPU
       year: 2023
       month: April - September
-      description: Using SystemVerilog and UVM, I worked as part of a small team working on verification of a high performance interconnect network.
-                   - Designed stimulus 
-                   - Improved testbenches
-                   - Improved performance of testbenches
-                   - Developed models based upon architectural specification
-                   - Debugged failures using logs and waveform viewers
-                   - Developed scripts to automate tasks
-                   - Developed verification tools to aid in debugging
+      description: 
+        - title: Using SystemVerilog and UVM, I worked as part of a small team working on verification of a high performance interconnect network.
+          contents:
+            - Designed stimulus 
+            - Improved testbenches
+            - Improved performance of testbenches
+            - Developed models based upon architectural specification
+            - Debugged failures using logs and waveform viewers
+            - Developed scripts to automate tasks
+            - Developed verification tools to aid in debugging
     - title: Logical Design Intern 
       institution: Graphcore
       year: 2022
