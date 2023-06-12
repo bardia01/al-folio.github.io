@@ -28,7 +28,7 @@ Latency and throughput were both priorities for the following reasons: if latenc
 As a result, I employed various techniques to try to improve the performance. For example, the filtering was done using FIFOs implemented using registers, although this was very costly on resource utilisation. Additionally, I created pipelines where possible to be able to retain high throughput.
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm">
         {% include figure.html path="assets/img/rover_arch.jpg" title="rover_arch" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
