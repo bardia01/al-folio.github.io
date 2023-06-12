@@ -1,4 +1,4 @@
-<!-- ---
+---
 layout: page
 title: Optimised double precision floating-point multiplier
 description: an investigation into optimised floating-point multiplication
@@ -63,4 +63,4 @@ Here's the code for the last row of images above:
     </div>
 </div>
 ```
-{% endraw %} -->
+{% endraw %}
