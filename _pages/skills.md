@@ -6,9 +6,9 @@ nav: true
 nav_order: 2
 permalink: /
 ---
-
-## Programming languages and frameworks
----
+please work please work
+<!-- ## Programming languages and frameworks -->
+<!-- ---
 ### Fluent
 - Verilog / SystemVerilog
 - UVM (Universal Verification Methodology)
@@ -48,4 +48,4 @@ permalink: /
 - Arduino
 - FreeRTOS
 - Linux
-
+ -->
