@@ -9,6 +9,7 @@ nav_order: 1
 
 ## Programming langages and frameworks
 
+---
 ### Fluent
 - Verilog / SystemVerilog
 - UVM (Universal Verification Methodology)
@@ -23,6 +24,7 @@ nav_order: 1
 
 &nbsp;
 
+---
 ## Technical expertise
 - Logical Design
 - Design Verification
@@ -31,6 +33,7 @@ nav_order: 1
 
 &nbsp;
 
+---
 ## Additonal Software
 - Waveform viewers
 - Quartus Prime
@@ -40,6 +43,7 @@ nav_order: 1
   
 &nbsp;
 
+---
 ## Relevant hardware / software systems experience
 - FPGA
 - Arduino
