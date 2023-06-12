@@ -6,8 +6,8 @@ nav: true
 nav_order: 2
 ---
 
-## Programming langages and frameworks
----
+## Programming languages and frameworks
+<!-- ---
 ### Fluent
 - Verilog / SystemVerilog
 - UVM (Universal Verification Methodology)
@@ -47,4 +47,4 @@ nav_order: 2
 - Arduino
 - FreeRTOS
 - Linux
-
+ -->
