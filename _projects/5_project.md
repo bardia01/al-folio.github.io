@@ -26,7 +26,7 @@ As a member of a team of six, we successfully designed and developed a multiplay
     </div>
 </div>
 <div class="caption">
-    The simplified architecture of the system.
+    Choose your character! From left to right we have the Wizard, Orc, Cowboy and Geek.
 </div>
 
 My primary role within the team was to design the FPGA-based controller, which served as a hardware interface for the game. The controller had an onboard accelerometer, buttons, and switches, allowing players to interact physically with the game environment. Leveraging the FPGA's capabilities, I implemented various signal filtering techniques to process the accelerometer data in hardware, ensuring precise and responsive control.
