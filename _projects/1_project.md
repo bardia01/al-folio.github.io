@@ -1,15 +1,15 @@
 ---
 layout: page
 title: Hardware-based mixed-format arithmetic accelerator
-description: 
+description: An exploration into optimizing datapaths
 importance: 1
 img: /assets/img/fpga.jpg
 category: work
 ---
 
-This project was exploratory, we set out with a goal of investigating how to optimise datapath design while limited by resource constraints. To be able to measure progress, at each milestone we tested the design by computing the same mathematical expression, which was a summation involving exponentials and sinusoid factors. 
+This project was exploratory, we set out with a goal of investigating how to optimise datapath design while limited by resource constraints. To be able to measure progress, at each milestone we tested the design by computing the same mathematical expression, which was a summation involving exponential and sinusoid factors. 
 
-The development process began by using a primitive design (implementing the function in software without any DSPs enabled on the soft-processor), and measuring the performance. Using this, we could analyse the data and hypothesise where the bottlenecks of the system lied. Then, we used simulations and experimentation to collect data about the performance gain versus resource cost of any suggested changes. Using this information, we were able to iterate the system architecture and measure the resultant performance.
+The development process began by using a primitive design (implementing the function in software without any DSPs enabled on the soft-processor), and measuring the performance. Using this, we could analyse the data and hypothesize where the bottlenecks of the system lied. Then, we used simulations and experimentation to collect data about the performance gain versus resource cost of any suggested changes. Using this information, we were able to iterate the system architecture and measure the resultant performance.
 
 Within the design phase, it was important to make sure each module implemented was verified with thorough and versatile testing so as to not lose accuracy in the output.
 
@@ -35,7 +35,7 @@ In the graph below, you can see the progress made across various milestones.
 In any digital design, the architecture is created by balancing resource usage and performance. As a result, all our performance data is complemented by the resource usage for each respective milestone in development. Resource usage recorded was a function of memory utilisation, LUT usage, register utilisation and DSP utilisation.
 
 
-The design had single-precision floating-point input and output. However, to accelerate computation of sinusoids, we implemented the <a href="https://en.wikipedia.org/wiki/CORDIC">CORDIC algorithm</a>. This meant that we had to experiment with floating-point to fixed-point conversions. To ensure that the loss of accuracy was limited to a known bound, we conducted Monte-Carlo simulations on the accuracy with various fixed-point word lengths using MATLAB. The same experiement methodology was repeated for various number of CORDIC iterations.
+The design had single-precision floating-point input and output. However, to accelerate computation of sinusoids, we implemented the <a href="https://en.wikipedia.org/wiki/CORDIC">CORDIC algorithm</a>. This meant that we had to experiment with floating-point to fixed-point conversions. To ensure that the loss of accuracy was limited to a known bound, we conducted Monte-Carlo simulations on the accuracy with various fixed-point word lengths using MATLAB. The same experiment methodology was repeated for various number of CORDIC iterations.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
