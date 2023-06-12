@@ -1,47 +1,19 @@
 ---
-layout: page
-title: skills
-description: A summary of my technical skillset
-nav: true
-nav_order: 1
+layout: about
+title: About me22
+permalink: /
+
+profile:
+  align: right
+  image: prof_pic.jpg
+  image_circular: false # crops the image to make it circular
+  address: >
+    <p>Greater London</p>
+    <p>United Kingdom</p>
+
+news: false  # includes a list of news items
+latest_posts: false  # includes a list of the newest posts
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: true  # includes social icons at the bottom of the page
 ---
-
-## Programming langages and frameworks
-
-### Fluent
-- Verilog / SystemVerilog
-- UVM (Universal Verification Methodology)
-- Python
-- C++
-
-### Intermediate
-- C
-- MATLAB
-- PyTorch, Pandas, Matplotlib
-- Bash
-
-&nbsp;
-
-## Technical expertise
-- Logical Design
-- Design Verification
-- Timing analysis
-- Area analysis
-
-&nbsp;
-
-## Additonal Software
-- Waveform viewers
-- Quartus Prime
-- Fusion compiler
-- LaTeX
-- Microsoft suite
-  
-&nbsp;
-
-## Relevant hardware / software systems experience
-- FPGA
-- Arduino
-- FreeRTOS
-- Linux
-
+Hello! I'm Bardia. I am a 3rd year Electronic and Information Engineering student at Imperial College London. I believe that the world of hardware engineering and computer architecture is fascinating. To that end, I am pursuing a career in the field. Currently, I am undergoing a 6 month industrial placement at Apple GPU, working with the Design Verification team. The experience has and is developing my understanding of ASIC development greatly, and I am gaining a sincere appreciation of the value that design verification brings to chip development.
