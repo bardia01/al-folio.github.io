@@ -29,6 +29,15 @@ As a result, I employed various techniques to try to improve the performance. Fo
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/rover_arch.jpg" title="rover" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    The full architecture of the vision sub-system.
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/rover_img.jpg" title="rover" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Hardware-based mixed-format arithmetic accelerator
-description: An exploration into optimizing datapaths
+description: an exploration into optimizing datapaths
 importance: 1
 img: /assets/img/fpga.jpg
 category: work
