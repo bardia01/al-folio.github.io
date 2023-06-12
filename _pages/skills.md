@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Skills
+title: skills
 description: A summary of my technical skillset
 nav: true
-nav_order: 2
+nav_order: 1
 ---
 
 ## Programming langages and frameworks
----
+
 ### Fluent
 - Verilog / SystemVerilog
 - UVM (Universal Verification Methodology)
@@ -23,7 +23,6 @@ nav_order: 2
 &nbsp;
 
 ## Technical expertise
----
 - Logical Design
 - Design Verification
 - Timing analysis
@@ -32,7 +31,6 @@ nav_order: 2
 &nbsp;
 
 ## Additonal Software
----
 - Waveform viewers
 - Quartus Prime
 - Fusion compiler
@@ -42,7 +40,6 @@ nav_order: 2
 &nbsp;
 
 ## Relevant hardware / software systems experience
----
 - FPGA
 - Arduino
 - FreeRTOS
