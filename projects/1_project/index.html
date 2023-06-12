@@ -12,8 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Hardware-based mixed-format arithmetic accelerator | Bardia  Mohammadzadeh</title>
     <meta name="author" content="Bardia  Mohammadzadeh">
-    <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-">
+    <meta name="description" content="An exploration into optimizing datapaths">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
 
@@ -118,13 +117,13 @@
 
           <header class="post-header">
             <h1 class="post-title">Hardware-based mixed-format arithmetic accelerator</h1>
-            <p class="post-description"></p>
+            <p class="post-description">An exploration into optimizing datapaths</p>
           </header>
 
           <article>
-            <p>This project was exploratory, we set out with a goal of investigating how to optimise datapath design while limited by resource constraints. To be able to measure progress, at each milestone we tested the design by computing the same mathematical expression, which was a summation involving exponentials and sinusoid factors.</p>
+            <p>This project was exploratory, we set out with a goal of investigating how to optimise datapath design while limited by resource constraints. To be able to measure progress, at each milestone we tested the design by computing the same mathematical expression, which was a summation involving exponential and sinusoid factors.</p>
 
-<p>The development process began by using a primitive design (implementing the function in software without any DSPs enabled on the soft-processor), and measuring the performance. Using this, we could analyse the data and hypothesise where the bottlenecks of the system lied. Then, we used simulations and experimentation to collect data about the performance gain versus resource cost of any suggested changes. Using this information, we were able to iterate the system architecture and measure the resultant performance.</p>
+<p>The development process began by using a primitive design (implementing the function in software without any DSPs enabled on the soft-processor), and measuring the performance. Using this, we could analyse the data and hypothesize where the bottlenecks of the system lied. Then, we used simulations and experimentation to collect data about the performance gain versus resource cost of any suggested changes. Using this information, we were able to iterate the system architecture and measure the resultant performance.</p>
 
 <p>Within the design phase, it was important to make sure each module implemented was verified with thorough and versatile testing so as to not lose accuracy in the output.</p>
 
@@ -181,7 +180,7 @@
 </div>
 <p>In any digital design, the architecture is created by balancing resource usage and performance. As a result, all our performance data is complemented by the resource usage for each respective milestone in development. Resource usage recorded was a function of memory utilisation, LUT usage, register utilisation and DSP utilisation.</p>
 
-<p>The design had single-precision floating-point input and output. However, to accelerate computation of sinusoids, we implemented the <a href="https://en.wikipedia.org/wiki/CORDIC" rel="external nofollow noopener" target="_blank">CORDIC algorithm</a>. This meant that we had to experiment with floating-point to fixed-point conversions. To ensure that the loss of accuracy was limited to a known bound, we conducted Monte-Carlo simulations on the accuracy with various fixed-point word lengths using MATLAB. The same experiement methodology was repeated for various number of CORDIC iterations.</p>
+<p>The design had single-precision floating-point input and output. However, to accelerate computation of sinusoids, we implemented the <a href="https://en.wikipedia.org/wiki/CORDIC" rel="external nofollow noopener" target="_blank">CORDIC algorithm</a>. This meant that we had to experiment with floating-point to fixed-point conversions. To ensure that the loss of accuracy was limited to a known bound, we conducted Monte-Carlo simulations on the accuracy with various fixed-point word lengths using MATLAB. The same experiment methodology was repeated for various number of CORDIC iterations.</p>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
