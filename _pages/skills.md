@@ -4,6 +4,7 @@ title: Skills
 description: A summary of my technical skills
 nav: true
 nav_order: 2
+permalink: 
 ---
 
 ## Programming languages and frameworks
