@@ -10,7 +10,7 @@ nav_order: 1
 ## Programming langages and frameworks
 
 ---
-### Fluent
+### Fluentasdas
 - Verilog / SystemVerilog
 - UVM (Universal Verification Methodology)
 - Python
