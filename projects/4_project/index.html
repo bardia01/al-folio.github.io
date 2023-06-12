@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Projects | Bardia  Mohammadzadeh</title>
+    <title>Optimised double precision floating-point multiplier | Bardia  Mohammadzadeh</title>
     <meta name="author" content="Bardia  Mohammadzadeh">
-    <meta name="description" content="A growing collection of your cool projects.">
+    <meta name="description" content="an exploration into digital design with floating-point data formats">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
 
@@ -38,7 +38,7 @@
     <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://bardiam.github.io/projects/">
+    <link rel="canonical" href="https://bardiam.github.io/projects/4_project/">
 
     <!-- Dark Mode -->
     
@@ -81,8 +81,8 @@
               <li class="nav-item ">
                 <a class="nav-link" href="/skills/">Skills</a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="/projects/">Projects<span class="sr-only">(current)</span></a>
+              <li class="nav-item ">
+                <a class="nav-link" href="/projects/">Projects</a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link" href="/cv/">CV</a>
@@ -116,123 +116,24 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Projects</h1>
-            <p class="post-description">A growing collection of your cool projects.</p>
+            <h1 class="post-title">Optimised double precision floating-point multiplier</h1>
+            <p class="post-description">an exploration into digital design with floating-point data formats</p>
           </header>
 
           <article>
-            <!-- pages/projects.md -->
-<div class="projects">
-  <!-- Display categorized projects -->
-  <h2 class="category">work</h2>
-  <!-- Generate cards for each project -->
-  <div class="grid">
-<!-- _includes/projects.html -->
-<div class="grid-sizer"></div>
-<div class="grid-item">
-  <a href="/projects/1_project/">
-      <div class="card hoverable">
-<figure>
+            <p>The goal of this project was to design a high-performance <a href="https://en.wikipedia.org/wiki/Double-precision_floating-point_format" rel="external nofollow noopener" target="_blank">double precision floating-point</a>. multiplier using SystemVerilog. This project showcases my expertise in digital design, verification, and synthesis, along with my ability to iterate and optimize designs for improved timing and area performance.</p>
 
-  <picture>
-    
+<p>The project began with the development of a fully combinatorial design for the double precision floating-point multiplier. I meticulously designed and implemented the multiplier using SystemVerilog, ensuring its functionality and correctness. To verify the design, I created comprehensive testbenches that covered both directed testing and constrained random testing scenarios. These testbenches allowed me to thoroughly validate the functionality and accuracy of the multiplier design.</p>
 
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/fpga.jpg" width="auto" height="auto" alt="project thumbnail" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+<p>To further enhance the design, I ran synthesis simulations using industry-standard tools. By analyzing the area and timing characteristics of the design, I identified areas for improvement and refinement. I employed a systematic approach by incrementally inserting pipeline stages while carefully analyzing timing performance. This iterative process ensured that the design remained within the specified limitations for pipeline stages as outlined in the architecture specification.</p>
 
-  </picture>
+<p>One of the key technical successes of this project was the utilization of the Karatsuba algorithm, a fast multiplication algorithm that optimizes performance. By implementing this algorithm, I achieved significant improvements in the multiplier’s efficiency and overall performance.</p>
 
-</figure>
+<p>Additionally, I implemented speculation techniques in the rounding logic of the multiplier. This speculation significantly contributed to meeting the timing requirements since rounding logic was no longer dependent on a certain control signal, and hence could be done at an earlier pipeline stage. This allowed for greater parallelism and hence enhanced the overall performance of the design.</p>
 
-        <div class="card-body">
-          <h2 class="card-title">Hardware-based mixed-format arithmetic accelerator</h2>
-          <p class="card-text">an exploration into optimizing datapaths</p>
-          <div class="row ml-1 mr-1 p-0">
-          </div>
-        </div>
-      </div>
-    </a>
-</div>
-<!-- _includes/projects.html -->
-<div class="grid-sizer"></div>
-<div class="grid-item">
-  <a href="/projects/3_project/">
-      <div class="card hoverable">
-<figure>
+<p>To further optimize the design, I experimented with various physical synthesis configurations using Tcl scripting. I explored different synthesis options, including utilizing slow and fast cells, to fine-tune the design for improved timing and area trade-offs. Furthermore, I implemented clock gating techniques to improve power performance, ensuring that the multiplier design achieved a well-balanced profile.</p>
 
-  <picture>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/rover_img_hq.jpg" width="auto" height="auto" alt="project thumbnail" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-        <div class="card-body">
-          <h2 class="card-title">Hardware implemented image processor and object detector</h2>
-          <p class="card-text">a team effort to develop a self-driving rover</p>
-          <div class="row ml-1 mr-1 p-0">
-          </div>
-        </div>
-      </div>
-    </a>
-</div>
-<!-- _includes/projects.html -->
-<div class="grid-sizer"></div>
-<div class="grid-item">
-  <a href="/projects/4_project/">
-      <div class="card hoverable">
-<figure>
-
-  <picture>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/fp.jpg" width="auto" height="auto" alt="project thumbnail" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-        <div class="card-body">
-          <h2 class="card-title">Optimised double precision floating-point multiplier</h2>
-          <p class="card-text">an exploration into digital design with floating-point data formats</p>
-          <div class="row ml-1 mr-1 p-0">
-          </div>
-        </div>
-      </div>
-    </a>
-</div>
-<!-- _includes/projects.html -->
-<div class="grid-sizer"></div>
-<div class="grid-item">
-  <a href="/projects/2_project/">
-      <div class="card hoverable">
-<figure>
-
-  <picture>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/proputter_background_small.jpg" width="auto" height="auto" alt="project thumbnail" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-        <div class="card-body">
-          <h2 class="card-title">ProPutter</h2>
-          <p class="card-text">an affordable golf trainer for beginners</p>
-          <div class="row ml-1 mr-1 p-0">
-          </div>
-        </div>
-      </div>
-    </a>
-</div>
-  </div>
-</div>
+<p>The project showcases my expertise in digital design methodologies and the successful application of various techniques to optimize the double precision floating-point multiplier. It highlights my ability to analyze synthesis results, make informed design choices, and iterate to achieve superior timing, area, and power characteristics.</p>
 
           </article>
 
