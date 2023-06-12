@@ -1,81 +1,52 @@
 ---
 layout: page
 title: ProPutter
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
+description: an affordable golf trainer for beginners! 
+img: assets/img/proputter_background.jpg
 importance: 2
 category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<a href="https://github.com/itmr1/ProPutter">Repository link</a>.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+<a href="https://bkmzad.wixsite.com/proputter">Concept website</a> 
+
+ProPutter is an embedded systems project that attempts to improve the way beginners learn and improve their golf putting skills. Designed as a smart golf club, ProPutter leverages sensor technology and signal processing techniques to provide valuable insights and feedback to users about their performance while playing golf.
+
+At the core of ProPutter lies an accelerometer which captures motion data during a golf putt. This raw data is then processed using filtering algorithms and other signal processing techniques to extract meaningful information about the user's putting technique.  
+
+The processed data is wirelessly transmitted to a secure backend server, where it is intelligently analyzed and presented to the user through a sleek web application. The filtered putt is compared against reference data and a performance score based upon the deviation from the reference data is outputted. Ideally, we would have had a large dataset from professional golf putters which could be used to train a regression model about what a 'good putt' is, and hence the performance score would be generated from the model as opposed to the primitive algorithm we hand-made.
+
+The web application serves as a comprehensive dashboard, providing users with a detailed overview of their putting performance, personalized recommendations for improvement, and the ability to compare their progress with friends.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/proputter_full.jpg" title="ProPutter" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+    The ProPutter prototype mounted onto a golf putter.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
 
+One of the notable technical successes of ProPutter is the implementation of advanced filtering algorithms. These algorithms effectively remove noise and artifacts from the accelerometer data, ensuring accurate and reliable measurements. Additionally, the integration of wireless communication protocols enables seamless data transfer between the golf club and the backend server, ensuring a seamless user experience.
+
+ProPutter's intuitive web application showcases another technical triumph. Through a user-friendly interface, golfers can easily navigate and explore their performance metrics, track their progress over time, and access personalized tips to enhance their putting skills. The ability to compare their results with friends adds a competitive element, fostering a sense of community and motivation among users.
+
+The integration of the temperature and humidity sensor adds another layer of insight to the ProPutter experience. By considering environmental factors, the system can provide golfers with a comprehensive understanding of how temperature and humidity may affect their putting abilities since they can track their performance across days with different environmental conditions.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/proputter_closeup.jpg" title="ProPutter" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    The ProPutter prototype closeup. We can see the reset button, temperature and humidity sensor and the master reset button all mounted onto the battery pack.
 </div>
 
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+ProPutter's success lies in the integration of different technical domains. The project showcases the effective collaboration of embedded systems, signal processing, wireless communication, and web application development. It demonstrates the potential of embedded systems to enhance traditional sports, while empowering beginners to take control of their golfing journey.
 
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
+
+Overall, ProPutter stands as a testament to the power of integrating various technical disciplines to create a useful and accessible tool for golfers. Its aim is to assist beginners in improving their putting skills while embracing the potential of embedded systems in sports.
