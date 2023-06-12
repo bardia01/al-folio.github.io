@@ -2,7 +2,7 @@
 layout: page
 title: ProPutter
 description: an affordable golf trainer for beginners! 
-img: assets/img/proputter_background.jpg
+img: /assets/img/proputter_background.jpg
 importance: 2
 category: work
 ---

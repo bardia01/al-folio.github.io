@@ -2,7 +2,7 @@
 layout: page
 title: Hardware implemented image processor and object detector
 description: a team effort to develop a self-driving rover 
-img: assets/img/rover_img_hq.jpg
+img: /assets/img/rover_img_hq.jpg
 importance: 1
 category: work
 ---
