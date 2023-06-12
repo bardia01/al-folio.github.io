@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Skills
+permalink: /skills/
 description: A summary of my technical skillset
 nav: true
 nav_order: 1
-permalink: /skills/
 ---
 
 ## Programming langages and frameworks
