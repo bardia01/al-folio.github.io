@@ -2,7 +2,7 @@
 layout: page
 title: MazeRunners
 description: a multiplayer maze solving game using an fpga as a controller!
-img: /assets/img/maze_runners_wizard.jpg
+img: /assets/img/maze_runners_bg.jpg
 importance: 1
 category: work
 ---
