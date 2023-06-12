@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Skills
-description: A summary of my technical skillset
+description: A summary of my technical skills
 nav: true
 nav_order: 2
 ---
