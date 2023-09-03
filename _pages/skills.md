@@ -26,6 +26,7 @@ nav_order: 1
 
 ---
 ## Technical expertise
+- Computer Architecture
 - Logical Design
 - Design Verification
 - Timing analysis
