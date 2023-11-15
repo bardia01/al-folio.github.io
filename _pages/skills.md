@@ -26,11 +26,19 @@ nav_order: 1
 
 ---
 ## Technical expertise
+# Hardware related
 - Computer Architecture
 - Logical Design
 - Design Verification
 - Timing analysis
 - Area analysis
+
+# Mathematics 
+- Probability theory
+- Topics in large dimensional data processing
+- Linear algebra
+- Mathematics for machine learning
+- Machine learning theory
 
 &nbsp;
 
