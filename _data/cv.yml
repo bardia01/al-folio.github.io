@@ -15,35 +15,41 @@
       institution: Imperial College London
       year: 2020-2024
       description:
-        - title: 1st Year.
+        - title: Key Machine Learning and Mathematics modules
           contents:
-            - Analysis and Design of Circuits.
-            - Digital and Computer Architecture
-            - Programming
-            - Mathematics
-        - title: 2nd year.
-          contents:
-            - Information Processing
-            - Instruction Architectures and Compilers
-            - Software systems
-            - Algorithms and discrete mathematics
-        - title: 3rd year.
-          contents:
-            - Digital System Design
-            - Advanced Computer Architecture
-            - Introduction to Machine Learning
-            - Embedded systems
-    - title: A Level 
-      institution: Woodhouse College
-      year: 2018
-      description:
-        - Mathematics
-        - Further Mathematics
-        - Physics
+            - Deep Learning (88%)
+            - Advanced Deep Learning Systems (81%)
+            - Mathematics for Machine Learning (84%)
+            - Computer vision (78%)
+            - Digital Signal Processing (82%)
+            - Signal processing and machine learning for finance (84%)
+            - Probability and Stochastic processes (77%)
+            - Topics in Large Dimensional Data Processing (77%)
+            - Operations Research (76%)
 
+        - title: Key Hardware and Software Engineering modules
+          contents:
+            - Digital System Design (84%)
+            - Advanced Computer Architecture (75%)
+            - Introduction to Machine Learning (76%)
+            - Embedded systems (72%)
+            - Instruction Architectures and Compilers (70%)
+            
 - title: Experience
   type: time_table
   contents:
+    - title: GPU Design Verification engineer
+      institution: Apple GPU
+      year: 2024
+      month: August - Current
+      description: 
+        - title: Using SystemVerilog and UVM, I work to verify part of a complex GPU frontend design. 
+          contents:
+            This role was a continuation from my internship. My key responsibilites include
+            - Owning testbenches for multiple units.
+            - Understanding complicated micro-architectural features functionally.
+            - Verifying the design against the architectural specification and thinking beyond the specification to identify bugs.
+            - Developing robust testbenches and stimulus which are maintainable and scalable across multiple generations.
     - title: GPU Design Verification Intern
       institution: Apple GPU
       year: 2023
@@ -73,6 +79,12 @@
 - title: Hardware-Related Project experience
   type: time_table
   contents:
+    - title: Master's Project - Learnable quantisation through paramaterised companding functions.
+      year: 2024
+      description: Through learnable quantisation, I was able to halve the area footprint of LUT-based neural networks whilst improving network accuracy.
+                   I developed a novel way to train a non-standard data representation through backpropgation of the network loss. This allowed layers to use
+                   non-standard data formats which were directly optimised for the task, resulting in lower area and power consumption.
+                   
     - title: Hardware-based mixed-format arithmetic accelerator 
       year: 2023
       description: Designed an arithmetic accelerator deployed on an FPGA to accelerate computations written in C.

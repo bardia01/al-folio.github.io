@@ -13,13 +13,12 @@ nav_order: 1
 ### Fluent
 - Verilog / SystemVerilog
 - UVM (Universal Verification Methodology)
-- Python
-- C++
+- Python, PyTorch
 
 ### Intermediate
-- C
+- C++
 - MATLAB
-- PyTorch, Pandas, Matplotlib
+- Pandas, Matplotlib
 - Bash
 
 &nbsp;
@@ -29,19 +28,24 @@ nav_order: 1
 
 <u>Hardware related<u>
 
+- Design Verification
 - Computer Architecture
 - Logical Design
-- Design Verification
 - Timing analysis
 - Area analysis
 
 <u>Mathematics<u>
 
-- Probability theory
+- Probability theory, Statistics
 - Topics in large dimensional data processing
+- Optimisation on large dimensional data
 - Linear algebra
 - Mathematics for machine learning
 - Machine learning theory
+
+<u>Software related<u>
+- Object Oriented Programming
+- Data structures and Algorithms
 
 &nbsp;
 

@@ -16,4 +16,4 @@ latest_posts: false  # includes a list of the newest posts
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
-Hello! I'm Bardia. I am a 4th year Electronic and Information Engineering student at Imperial College London. I believe that the world of hardware engineering and computer architecture is fascinating. To that end, I am pursuing a PhD in the field. Please feel free to take a look at my projects and experience!
+Hello! I'm Bardia. I recently graduated from Electronic and Information Engineering Imperial College London. I believe that the world of hardware engineering, computer architecture and low latency software is fascinating. Please feel free to take a look at my projects and experience!
