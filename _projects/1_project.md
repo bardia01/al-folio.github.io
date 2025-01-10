@@ -9,7 +9,9 @@ category: work
 
 This project was conducted as part of my Master's degree at Imperial College London. The project was supervised by Dr. George Constantinides. I self-proposed this project after reading various papers in the field of hardware for machine learning. My aim was to implement a trainable quantisation scheme optimised for LUT-based neural networks. The project was conducted over my fourth year at university was completed in 2024. The following is the abstract of the project.
 
-You can access my full master's thesis [here](../assets/pdf/FYP_final_report.pdf).
+You can access my full master's thesis [here](../assets/pdf/FYP_final_report.pdf){:target="_blank"}.
+
+
 <u> Abstract </u>
 
 
