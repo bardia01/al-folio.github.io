@@ -205,7 +205,7 @@ kramdown:
 include:
   - assets/pdf/FYP_final_report.pdf
   - _pages
-  
+
 exclude:
   - bin
   - Gemfile
@@ -233,11 +233,11 @@ plugins:
   - jemoji
 
 # Sitemap settings
-defaults:
-  - scope:
-      path: "assets"
-    values:
-      sitemap: false
+# defaults:
+#   - scope:
+#       path: "assets"
+#     values:
+#       sitemap: false
 
 # -----------------------------------------------------------------------------
 # Jekyll Minifier
