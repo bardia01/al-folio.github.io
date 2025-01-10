@@ -202,7 +202,10 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ['_pages']
+include:
+  - assets/pdf/FYP_final_report.pdf
+  - _pages
+  
 exclude:
   - bin
   - Gemfile
